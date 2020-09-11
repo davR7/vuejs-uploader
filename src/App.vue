@@ -1,25 +1,37 @@
 <template>
   <div id="app">
-    <VueDropzoneX />
+    <ImageUpload />
   </div>
 </template>
 
 <script>
-import VueDropzoneX from './components/VueDropzoneX.vue'
+import ImageUpload from './components/ImageUpload.vue'
 
 export default {
-  name: 'App',
-  components: { VueDropzoneX }
+  components: { ImageUpload }
 }
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #41b883;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+html, body, #app {
+  height: 100%;
 }
 </style>
