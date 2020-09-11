@@ -1,4 +1,6 @@
-# vuedropzonex
+# Vuejs Uploader
+
+Simple application that uploads image to firebase. To work correctly, insert your account settings in the file that is in src/firebase. For more information visit the link: https://firebase.google.com/docs/web/setup?hl=pt-br
 
 ## Project setup
 ```
@@ -19,6 +21,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
