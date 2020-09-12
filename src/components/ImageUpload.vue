@@ -8,18 +8,20 @@
         :options="dropzoneOptions"
         @vdropzone-complete="afterComplete"
       ></vueDropzone>
+      <ImageGallery :images="images"/>
     </div>
   </div>
 </template>
 
 <script>
+import ImageGallery from './ImageGallery.vue'
 import firebase from "../firebase.js"
 import vueDropzone from "vue2-dropzone"
 import "vue2-dropzone/dist/vue2Dropzone.min.css"
 let uuid = require("uuid");
 
 export default {
-  components: { vueDropzone },
+  components: { vueDropzone, ImageGallery },
   data() {
     return {
       dropzoneOptions: {
